@@ -1,0 +1,320 @@
+<!Doctype html>
+    <html lang= "en">
+
+    <head >
+
+       
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="ionicons.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> 
+        <title>Your Sports</title>
+
+        <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.429/styles/kendo.common-material.min.css" />
+        <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.429/styles/kendo.material.min.css" />
+        <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.429/styles/kendo.dataviz.min.css" />
+        <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.429/styles/kendo.dataviz.material.min.css" />
+
+        <script src="http://cdn.kendostatic.com/2015.1.429/js/jquery.min.js"></script>
+        <script src="http://cdn.kendostatic.com/2015.1.429/js/kendo.all.min.js"></script>
+        
+
+        
+      <section> 
+        
+        <script>
+function getVote(int) {
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else {  // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote.php?vote="+int,true);
+  xmlhttp.send();
+}
+</script>
+        </section> 
+          
+      
+        
+        
+        
+    </head>
+        
+    <body>
+       <header>
+                 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand -->
+           <a class="navbar-brand" href="index.html">Your Sports</a>
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="http://www.nba.com">NBA</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="https://www.mlb.com/">MLB</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="http://www.laliga.es/">Soccer</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="http://wbcboxing.com/wbceng/">Boxing</a>
+    </li>
+    
+  </ul>
+</nav>
+           <br>
+        </header> 
+      
+        
+       <section>
+        <div class="container">
+            <div class="row"><h3>Your Favorite Sports Website</h3></div>
+           </div>
+  <br>
+           
+           <!--CALENDAR-->
+           
+           <div class="container">
+                <div class="row">
+                    
+               
+               </div>
+           
+           </div>
+   
+            
+            
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col-lg-4">
+                        
+      <!-- Responsive calendar - START -->
+    	<div class="responsive-calendar">
+        <div class="controls">
+            <a class="pull-left" data-go="prev"><div class="btn btn-primary">Prev</div></a>
+            <h4><span data-head-year></span> <span data-head-month></span></h4>
+            <a class="pull-right" data-go="next"><div class="btn btn-primary">Next</div></a>
+        </div><hr/>
+        <div class="day-headers">
+          <div class="day header">Mon</div>
+          <div class="day header">Tue</div>
+          <div class="day header">Wed</div>
+          <div class="day header">Thu</div>
+          <div class="day header">Fri</div>
+          <div class="day header">Sat</div>
+          <div class="day header">Sun</div>
+        </div>
+        <div class="days" data-group="days">
+          
+        </div>
+      </div>
+      <!-- Responsive calendar - END -->
+    
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/responsive-calendar.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".responsive-calendar").responsiveCalendar({
+          time: '2018-06',
+          events: {
+            "2013-04-30": {"number": 5, "url": "http://w3widgets.com/responsive-slider"},
+            "2013-04-26": {"number": 1, "url": "http://w3widgets.com"}, 
+            "2013-05-03":{"number": 1}, 
+            "2013-06-12": {}}
+        });
+      });
+    </script>
+                      <!--  <div id="example">
+				            <div class="demo-section k-header" style="width: auto; height: 400px; text-align: center;">
+                                <div id="calendar"></div>
+                                </div>
+                            <script>
+                                    $(document).ready(function() {
+                            // create Calendar from div HTML element
+                        $("#calendar").kendoCalendar();
+                                        }       );
+                            </script> -->
+        </div>
+                   
+                 
+                    
+                   
+                    <div class="col-lg-6">
+                    
+                       <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+        <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="https://piratasdelbasket.net/wp-content/uploads/2016/06/NBA-Finals-Logo.jpg" alt="NBA Finals" style="width:auto; height:300px;">
+    </div>
+    <div class="carousel-item">
+      <img src="http://www.fondosgratis.mx/archivos/temp/11321/400_1300944139_199234-1024x768-mlblogo1.jpg" alt="MLB Logo" style="width:auto; height:300px; margin-left: 80px;">
+    </div>
+    <div class="carousel-item">
+      <img src="https://guardian.ng/wp-content/uploads/2016/06/Sports.jpg" alt="All Sports" style="width:auto; height:300px;">
+  </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+      
+        </section>
+      <section class="news">
+           
+       <div class="container">
+           <div class="row">
+                <div class="col-lg-3">
+                  <center><h2>NBA news</h2></center>
+  <br>
+  <div class="card" style="width:250px">
+    <img class="card-img-top" src="https://ak-static.cms.nba.com/wp-content/uploads/sites/45/2018/05/LBJ470-1.jpg"  alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Young Celtics look to stop LeBron James, Cavaliers</h4>
+      <p class="card-text">For a few days at least, much of the talk about this rematch of the 2017 Eastern Conference finals will focus on what might have been. In what could have offered...</p>
+      <a href="http://www.nba.com/article/2018/05/10/cleveland-cavaliers-boston-celtics-2018-eastern-conference-finals-preview" class="btn btn-primary">See more</a>
+    </div>
+  </div>
+        </div>
+               
+               
+               <div class="col-lg-3">
+                    <center><h2>MLB news</h2></center>
+  <br>
+  <div class="card" style="width:250px">
+    <img class="card-img-top" src="https://rec-end.elnuevodia.com/images/tn/0/143/2400/2228/900/789/2018/05/05/ap18125131800650.jpg"  alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">The dominican Albert Pujols adds 3,000-hit club to historic resume</h4>
+      <p class="card-text">Angels slugger also gets No. 3,001 to pass Clemente for 31st all-time. SEATTLE -- Albert Pujols has moved into increasingly rarefied territory over his decorated 18-year career in the Majors...</p>
+      <a href="https://www.mlb.com/news/albert-pujols-gets-his-3000th-hit/c-275253320" class="btn btn-primary">See more</a>
+    </div>
+  </div>
+        </div>
+               
+               <div class="col-lg-3">
+                    <center><h2>Soccer news</h2></center>
+  <br>
+  <div class="card" style="width:250px">
+    <img class="card-img-top" src="https://www.telegraph.co.uk/content/dam/football/2018/05/03/salah-ronaldo_trans_NvBQzQNjv4BqqVzuuqpFlyLIwiB6NTmJwfSVWeZ_vEN7c6bHu2jJnT8.PNG?imwidth=1400"  alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Champions League final 2018</h4>
+      <p class="card-text">The defending champions and 12-time winners Real are bidding for their third successive title while Liverpool are seeking the sixth in their history. Two of history's most successful... </p>
+      <a href="https://www.telegraph.co.uk/football/0/champions-league-final-2018-date-time-match-venue-tickets/" class="btn btn-primary">See more</a>
+    </div>
+  </div>
+        </div>
+               
+               <div class="col-lg-3">
+                   <center><h2>Boxing news</h2></center>
+  <br>
+  <div class="card" style="width:250px">
+    <img class="card-img-top" src="https://cdn.images.express.co.uk/img/dynamic/102/590x/Anthony-Joshua-vs-Deontay-Wilder-877486.jpg"  alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Anthony Joshua v Deontay Wilder</h4>
+      <p class="card-text">WBC heavyweight champion Deontay Wilder has offered $50m (£35.9m) for a unification fight with WBO, IBF and WBA titles holder Anthony Joshua. Wilder said he would accept the fight for...</p>
+      <a href="https://www.bbc.com/sport/boxing/43902504" class="btn btn-primary">See more</a>
+    </div>
+  </div>
+        </div>
+               
+               
+               </div>
+           
+           </div>
+  
+  <br>    
+           
+           
+          </section> 
+           
+      
+           <section class="top">
+               
+            <div class=" container">
+                    
+                        <center><h2> Top 10 plays of the week</h2></center> <br>
+                    
+               </div>
+               
+               
+               <div class="container">
+                <div class="row">
+                   <div class="col-lg-6">
+                     <center><h3>MLB</h3></center>      
+         <center> <iframe src="https://www.youtube.com/embed/-p0_dTWidiE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </center> 
+                   </div>
+               
+                   
+                   <div class="col-lg-6">
+                    <center><h3>NBA</h3></center>
+         <center> <iframe src="https://www.youtube.com/embed/7CUR-6tT-3I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> ></center> 
+                   </div>
+                    
+               </div>
+             </div>
+           
+           </section>
+        
+        
+        
+      <!--Champions league encuesta-->   
+        
+        <br>
+        <section>
+        
+      <center>  <div id="poll">
+<h3>Who do You think will win the Champions League this year?</h3>
+<form>
+Real Madrid:
+<input type="radio" name="vote" value="0" onclick="getVote(this.value)">
+<br>Liverpool Football Club:
+<input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+</form>
+</div> </center>
+        
+        </section>
+        
+    <footer>
+        
+            <div class="row">
+
+            <div class="col span-1-of-2">
+                <ul class="footer-nav"></ul>
+            </div>
+            
+        </div>
+
+
+
+        <div class=" row">
+            <p class="pfooter">Copyright &copy;  Your Sports: Exclusive use of the DAW subject (David Féliz)</p>
+
+        </div>
+    
+    </footer>
+        
+        </body>
+</html>
